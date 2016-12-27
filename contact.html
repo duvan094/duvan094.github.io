@@ -50,49 +50,28 @@
 	</header>
 	
 	<main>
-
-
-		<div class="flexslider index-slider">
- 			<ul class="slides">
-    			<li>
-    				<div class="slide-container slide1">
-    					<h4>Front klar för montering</h4>
-    				</div>
-				</li>
-				<li>
-    				<div class="slide-container slide2">
-    					<h4>Combo snart klar!</h4>
-    				</div>
-				</li>
-				<li>
-    				<div class="slide-container slide3">   
-    					<h4>10" Celestion Tube!</h4>
-    				</div>
-				</li>
-				<li>
-    				<div class="slide-container slide4">
-    					<h4>Uranus elektronik!</h4>
-    				</div>
-				</li>
-				<li>
-    				<div class="slide-container slide5">	
-						<h4>GT5 Topp</h4>
-					</div>
-				</li>
-			</ul>
-		</div>
-
-
-
 		<article class="article-page">
-			<h1>Välkommen till MIAC!</h1>
-			<p>MIAC tillhandahåller prisvärda Rörförstärkare för elgitarr med bra kvalité primärt tänkta för egen inbyggnad i kabinett.</p>
-			<p>Förstärkarna bygger på moderna beprövade kopplingar och ger ett fantastiskt bra genuint rörljud! Elektroniken kommer från <a href="http://www.kldguitar.com/">KLD</a>.</p>
-			<p>De olika modellerna har olika karaktär. Den EL84 baserade GT15H har en rockigare heavy-metall karaktär med många distmöjligheter medan den mer sobra 6L6-baserade Pilot15 har ett mer vintage sound.</p>
-			<p>Förstärkarna finns som "Rörtoppar". En mindre 5W modell finns även för inbyggnad i Rörcombo till exempel tillsammans med valfritt 10" Celestion högtalare.</p>
-			<p>Det finns också ett antal förstärkare inbyggda i kabinett. Kabinetten är i olika träslag som furu, bok och ek med vackra sinkade hörn. Varje förstärkare är handgjord!</p>
-		</article>
+			<h1>Kontaktinformation</h1>
+			<p>MIAC nås via mail, <a href="mailto:tube@miac.se"><b>tube@miac.se</b></a>, telefon kvällstid, 0709-727158, eller via detta formulär.</p>
 
+
+			<form method="post" action="http://www.miac.se/cgi-bin/FormMail.pl" accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; document.charset = 'ISO-8859-1'; window.onbeforeunload = function () {document.charset=originalCharset;};">
+
+				<input type="text" name="name" placeholder="Namn" required/>
+				</br>
+				<input type="email" name="email" placeholder="Email" required>
+				</br>
+				<textarea cols="40" rows="5" name="Message" placeholder="Skriv ditt meddelande." required></textarea>
+				</br>
+				<input type="submit" class="submit" value="Skicka" />
+
+				<input type="hidden" name="recipient" value="tube@miac.se" />
+				<input type="hidden" name="subject" value="Subject" />
+				<input type="hidden" name="redirect" value="http://www.miac.se/tube/index.html" />
+				<input type="hidden" name="missing_fields_redirect" value="http://www.example.com/fel.html" />
+				<input type="hidden" name="required" value="realname,email,Message" />
+			</form>
+		</article>
 	</main>
 
 	<footer>
