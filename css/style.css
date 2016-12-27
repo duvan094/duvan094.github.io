@@ -362,28 +362,6 @@ article>p>a:hover{
 	display: block;
 }
 
-
-
-.modal>a{
-	color:#FFFFFF;
-	text-decoration: none;
-	font-size: 34px;
-	position: absolute;
-	top:22px;
-	right: 22px;
-	-webkit-transition: color 0.3s ease-in-out;
-	-moz-transition: color 0.3s ease-in-out;
-	transition: color 0.3s ease-in-out;
-}
-
-.modal>a:hover{
-	color:#CECECE;
-}
-
-.modal>a:active{
-	color:#999999;
-}
-
 .modal>.flex-container{
 	width:90%;
 	margin: 110px auto auto auto;
@@ -393,6 +371,45 @@ article>p>a:hover{
 	background: #FFFFFF;
 	border-radius: 5px;
 	display: block;
+	position: relative;
+}
+
+.modal>.flex-container>a{
+	color:#FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	font-size: 22px;
+	line-height: 30px;
+	position: absolute;
+	z-index: 5000;
+	top:-11px;
+	right:-11px;
+
+	width: 30px;
+	height:30px;
+	display: block;
+	background: #222222;
+	border-radius: 50%;
+	border: solid #FFFFFF 3px;
+
+	-webkit-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.8);
+	-moz-box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.8);
+	box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.8);
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.modal>.flex-container>a:hover{
+	color:#CECECE;
+	border-color:#CECECE;
+}
+
+.modal>.flex-container>a:active{
+	color:#CE0000;
+	border-color:#CE0000;
 }
 
 .modal>.flex-container>img{
