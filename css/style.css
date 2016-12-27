@@ -371,6 +371,9 @@ article>p>a:hover{
 	position: absolute;
 	top:22px;
 	right: 22px;
+	-webkit-transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
 }
 
 .modal>a:hover{
@@ -378,7 +381,7 @@ article>p>a:hover{
 }
 
 .modal>a:active{
-	color:#AEAEAE;
+	color:#999999;
 }
 
 .modal>.flex-container{
