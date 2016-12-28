@@ -379,6 +379,8 @@ article>p>a:hover{
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
 	line-height: 30px;
 	position: absolute;
 	z-index: 5000;
