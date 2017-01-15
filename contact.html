@@ -55,7 +55,7 @@
 			<p>MIAC nås via mail, <a href="mailto:tube@miac.se"><b>tube@miac.se</b></a>, telefon kvällstid, 0709-727158, eller via detta formulär.</p>
 
 
-			<form method="post" action="http://www.miac.se/cgi-bin/FormMail.pl" accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; document.charset = 'ISO-8859-1'; window.onbeforeunload = function () {document.charset=originalCharset;};">
+			<form action="mailto:tube@miac.se" method="post" enctype="text/plain">
 
 				<input type="text" name="name" placeholder="Namn" required/>
 				</br>
@@ -64,12 +64,6 @@
 				<textarea cols="40" rows="5" name="Message" placeholder="Skriv ditt meddelande." required></textarea>
 				</br>
 				<input type="submit" class="submit" value="Skicka" />
-
-				<input type="hidden" name="recipient" value="tube@miac.se" />
-				<input type="hidden" name="subject" value="Subject" />
-				<input type="hidden" name="redirect" value="http://www.miac.se/tube/index.html" />
-				<input type="hidden" name="missing_fields_redirect" value="http://www.example.com/fel.html" />
-				<input type="hidden" name="required" value="realname,email,Message" />
 			</form>
 		</article>
 	</main>
