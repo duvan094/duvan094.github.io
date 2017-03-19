@@ -38,7 +38,7 @@ nav{
 	position: fixed;
 	z-index: 10000;
 	width: 100%;
-	background: rgba(0,0,0,0.8);
+	/*background: rgba(0,0,0,0.8);*/
 }
 
 nav>ul{
@@ -55,6 +55,13 @@ nav>ul>li>a{
 	text-decoration: none;
 	color:#FFF;
 	padding:22px 11px;
+	font-weight: 500;
+   -webkit-transition: color 0.2s ease; /* Safari and Chrome */
+    -moz-transition: color 0.2s ease; /* Firefox */
+    -ms-transition: color 0.2s ease; /* IE 9 */
+    -o-transition: color 0.2s ease; /* Opera */
+    transition: color 0.2s ease;
+
 }
 
 .anchor{
