@@ -187,17 +187,15 @@ article#about-container>div>h2{
 }
 
 .left-container>a>img, .right-container>a>img{
-		width: 100%;
-		height: auto;
-		position: relative;
-		display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: block;
     -webkit-transition: all 1s ease; /* Safari and Chrome */
     -moz-transition: all 1s ease; /* Firefox */
     -ms-transition: all 1s ease; /* IE 9 */
     -o-transition: all 1s ease; /* Opera */
     transition: all 1s ease;
-
-        background-blend-mode: multiply;
 }
 
 .left-container>a:hover>img, .right-container>a:hover>img {
@@ -206,6 +204,9 @@ article#about-container>div>h2{
     -ms-transform:scale(1.05); /* IE 9 */
     -o-transform:scale(1.05); /* Opera */
      transform:scale(1.05);
+
+	-webkit-filter: contrast(120%);
+	filter: contrast(120%);
 }
 
 
@@ -217,11 +218,11 @@ article#about-container>div>h2{
 }
 
 
-.right-container>a,.left-container>a{
+.right-container>.arrow-container,.left-container>.arrow-container{
 	display: block;
 }
 
-.left-container>a:after,.right-container>a:after{
+.left-container>.arrow-container:after,.right-container>.arrow-container:after{
 	border:solid 20px transparent;
 	content:'';
 	width: 0;
@@ -229,11 +230,50 @@ article#about-container>div>h2{
 	position: absolute;
 	bottom:0;
 }
-.right-container>a:after,.left-container>a:after{
+.right-container>.arrow-container:after,.left-container>.arrow-container:after{
 	border-bottom-color:#f4f4f4;
 	left:50%;
 	margin-left: -20px;
 }
+
+.read-more-button{
+	text-decoration: none;
+	color:#000;
+	display: inline-block;
+	border: solid 2px #000;
+	padding:5px;
+	margin: 22px 0 0 0;
+	text-align: center;
+	font-weight: 500;
+	position: relative;
+	transition:all 0.2s ease-in-out;
+}
+
+.read-more-button:after{
+	content: '';
+	position: absolute;
+	width:150px;
+	height: 50px;
+	background: #000;
+	top:100%;
+	left:0;
+	transition:all 0.2s ease-in-out;
+	z-index: -1;
+}
+
+.read-more-button:hover{
+	color:#FFF;
+}
+
+.read-more-button:hover:after{
+	top:0;
+}
+
+.read-more-button:active{
+	color:#ff3030;
+	transition:none;
+}
+
 
 footer{
 	background:#000;
@@ -274,7 +314,7 @@ footer>button{
 	}
 
 	.porfolio-obj-container{
-		margin: 44px 0;
+		margin: 88px 0;
 	}
 
 	.left-container{
@@ -290,22 +330,18 @@ footer>button{
 		padding-left: 22px;
 	}
 
-	.right-container>a,.left-container>a{
-		display: block;
-	}
 
-
-	.left-container>a:after,.right-container>a:after{
+	.left-container>.arrow-container:after,.right-container>.arrow-container:after{
 		border:solid 20px transparent;
 		top:50%;
 	}
-	.right-container>a:after{
+	.right-container>.arrow-container:after{
 		border-left-color:#f4f4f4;
 		left:40px;
 		margin-top: -20px;
 	}
 
-	.left-container>a:after{
+	.left-container>.arrow-container:after{
 		border-right-color:#f4f4f4;
 		left:100%;
 		margin-left:-60px;
@@ -320,4 +356,10 @@ footer>button{
 		float:right;
 		width: 50%;
 	}
+
+	.read-more-button{
+		float:right;
+		margin-top: 44px;
+	}
+
 }
