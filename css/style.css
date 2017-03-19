@@ -3,12 +3,17 @@
 	padding: 0;
 }
 
-h1,h2,h3,h4{
-	font-family: 'Roboto', sans-serif;
+::selection {
+  background: #333; /* WebKit/Blink Browsers */
+  color:#FFF;
+}
+::-moz-selection {
+  background: #333; /* Gecko Browsers */
+  color:#FFF;
 }
 
-h1,h2{
-
+h1,h2,h3,h4{
+	font-family: 'Roboto', sans-serif;
 }
 
 h3{
@@ -25,7 +30,6 @@ p,a{
 }
 
 body{
-	/*background:#f8f8f8;*/
 	background: #f4f4f4;
 }
 
@@ -66,7 +70,7 @@ figure#top-image{
 	width: 100%;
 	height: 720px;
 	background-size: cover;
-	background-position: fixed;
+	background-position: 20%;
 	position: relative;
 	text-align: center;
 
@@ -85,14 +89,36 @@ figure#top-image>div#text-container{
 }
 
 
-
 figure#top-image>div#text-container>h2{
 	/*color:#ff3030;*/
 	color:#FFF;
 	font-weight: 300;
 	font-size: 16px;
 	margin-bottom: 44px;
+	position: relative;
 }
+
+figure#top-image>div#text-container>h2:before{
+	content: '> ';
+	color:#FFF;
+	font-weight: 400;
+}
+
+figure#top-image>div#text-container>h2:after{
+	content: '_';
+	color:#FFF;
+	font-weight: 900;
+	position: absolute;
+    animation-name: blink;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    from {content: '_';}
+    to {content:'';}
+}
+
 
 figure#top-image>div#text-container>h1{
 	color:#fff;
@@ -141,6 +167,7 @@ figure#profile-image{
 .article-wrapper{
 	padding: 88px 11px;
 	overflow: hidden;
+	text-align: center;
 }
 
 article#about-container>div>h2{
@@ -223,11 +250,13 @@ footer>button{
 
 
 @media(min-width: 960px){
+
 	.article-wrapper{
 		width:960px;
 		margin: auto;
 		padding: 88px 0;
 		overflow: hidden;
+		text-align: left;
 	}
 
 	article#about-container>div>h2{
