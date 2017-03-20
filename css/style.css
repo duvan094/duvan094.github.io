@@ -216,7 +216,6 @@ div.article-container>h1,div.article-container>h4{
 }
 div.article-container>h1{
 	color:#ff3030;
-	margin-top: 22px;
 	font-size: 42px;
 	font-weight: 900;
 }
@@ -377,7 +376,7 @@ article#about-container>div>h2{
 	border: solid 15px transparent;
 	border-bottom-color: #111;
 	z-index: 1000000;
-	bottom:240px;
+	bottom:275px;
 	transition:right 0.2s ease-in-out;
 }
 
@@ -419,22 +418,56 @@ footer{
 	padding:88px 0;
 }
 
-footer>.contact-button{
-	color:#FFF;
-	border:solid #FFF 2px;
-	padding:15px;
-	font-weight: 500;
-	text-align: center;
+footer>.contact-logos{
+	display: inline-block;
+	height:50px;
+	margin:0 44px;
+	position: relative;
 }
 
-.contact-button:hover{
-	color:#111;
-	background: #FFF;
-	cursor:pointer;
+footer>.mail{
+	padding:5px 0;
 }
 
-.contact-button:active{
-	color:#ff3030;
+footer>.mail:hover>svg>g>path{
+	fill:#e04c40;
+}
+
+footer>.github{
+	height:60px;
+}
+
+footer>.github:hover>svg>path{
+	fill:#4078c0;
+}
+
+footer>.contact-logos>svg{
+	width: auto;
+	height:100%;
+}
+
+.social-media-label{
+	position: absolute;
+  	left: 0;
+  	right: 0;
+  	margin: 0 auto;
+  	width: 0;
+  	overflow: hidden;
+  	font-weight: 700;
+  	bottom:-25px;
+  	transition:all 0.1s ease-in-out;
+}
+
+.contact-logos:hover>.social-media-label{
+  	width: 60px;
+}
+
+.mail-label{
+	color:#e04c40;
+}
+
+.github-label{
+	color:#4078c0;
 }
 
 @media(min-width: 960px){
