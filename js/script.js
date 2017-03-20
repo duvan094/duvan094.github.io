@@ -35,7 +35,7 @@ $(document).on('scroll', function() {
     }
 
 
-    if($(this).scrollTop()>=($(document).height() - $(window).innerHeight())){
+    if($(this).scrollTop()>=($(document).height() - $(window).innerHeight())-100){
     	var backToTopButton = document.getElementById("back-to-top");
     	backToTopButton.className = "displayBTT";
     }
