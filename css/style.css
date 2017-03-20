@@ -376,7 +376,7 @@ article#about-container>div>h2{
 	border: solid 15px transparent;
 	border-bottom-color: #111;
 	z-index: 1000000;
-	bottom:275px;
+	bottom:60%;
 	transition:right 0.2s ease-in-out;
 }
 
@@ -415,7 +415,15 @@ article#about-container>div>h2{
 footer{
 	background:#111;
 	text-align:center;
-	padding:88px 0;
+	padding:110px 0 0 0;
+}
+
+footer>p{
+	padding:88px 0 22px 0;
+	line-height: 22px;
+	color:#555;
+	font-size: 12px;
+	font-weight: 500;
 }
 
 footer>.contact-logos{
