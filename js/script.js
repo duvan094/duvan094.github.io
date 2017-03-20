@@ -1,7 +1,3 @@
-$(window).load(function(){
-	document.getElementById("top-image").style.height = window.innerHeight;
-});
-
 $(document).ready(function(){
 
 	$('a').click(function(){
@@ -22,7 +18,7 @@ $(document).on('scroll', function() {
         var navLinks = document.querySelectorAll("nav>ul>li>a");
 
 	    for(var i = 0; i<navLinks.length; i++){
-	       	navLinks[i].style.color = "#000";
+	       	navLinks[i].style.color = "#222";
 	    }
 	     
     }else{
@@ -33,4 +29,4 @@ $(document).on('scroll', function() {
         }
     }
 
-})
+});
