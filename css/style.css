@@ -180,12 +180,12 @@ figure#top-image>div#text-container>h1{
 	position: absolute;
 	bottom: 0;
 	left:50%;
-	margin-left:-7.5px;
-	border: solid 15px transparent;
+	margin-left:-5px;
+	border: solid 10px transparent;
 	border-top-color:#FFF;
 	font-size: 62px;
 	font-weight: 300;
-	margin-bottom: 22px;
+	margin-bottom: 11px;
 }
 
 #down-arrow:hover{
@@ -195,13 +195,13 @@ figure#top-image>div#text-container>h1{
 
 @keyframes jump {
     0% {
-    	margin-bottom:22px;
+    	margin-bottom:11px;
     }
     50%{
-    	margin-bottom: 44px;
+    	margin-bottom: 22px;
     }
     100%{
-    	margin-bottom: 22px;
+    	margin-bottom: 11px;
     }
 }
 
@@ -375,10 +375,18 @@ article#about-container>div>h2{
 	height: 0;
 	display: block;
 	border: solid 15px transparent;
-	border-bottom-color: #000;
+	border-bottom-color: #111;
 	z-index: 1000000;
 	bottom:240px;
-	transition:all 0.2s ease-in-out;
+	transition:right 0.2s ease-in-out;
+}
+
+#back-to-top:active{
+    border-bottom-color:#ff3030;
+}
+
+#back-to-top:active:after{
+    background:#ff3030;
 }
 
 #back-to-top:after{
@@ -387,7 +395,7 @@ article#about-container>div>h2{
 	display: block;
 	width: 30px;
 	height:3px;
-	background: #000;
+	background: #111;
 	left:-15px;
 	bottom:-22px;
 }
@@ -406,7 +414,7 @@ article#about-container>div>h2{
 }
 
 footer{
-	background:#222;
+	background:#111;
 	text-align:center;
 	padding:88px 0;
 }
@@ -420,7 +428,7 @@ footer>.contact-button{
 }
 
 .contact-button:hover{
-	color:#222;
+	color:#111;
 	background: #FFF;
 	cursor:pointer;
 }
