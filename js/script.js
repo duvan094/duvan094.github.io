@@ -35,9 +35,16 @@ $(document).on('scroll', function() {
     }
 
 
-    if($(this).scrollTop()>=$(document).height() - $(window).innerHeight()){
+    if($(this).scrollTop()>=($(document).height() - $(window).innerHeight())){
     	var backToTopButton = document.getElementById("back-to-top");
     	backToTopButton.className = "displayBTT";
     }
+
+    if($(this).scrollTop()<($(document).height() - $(window).innerHeight())-150){
+    	var backToTopButton = document.getElementById("back-to-top");
+    	backToTopButton.className = "hideBTT";
+    }
+
+
 
 });

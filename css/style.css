@@ -375,10 +375,10 @@ article#about-container>div>h2{
 	height: 0;
 	display: block;
 	border: solid 15px transparent;
-	border-bottom-color: #222;
+	border-bottom-color: #000;
 	z-index: 1000000;
-	bottom:44px;
-	right:0px;
+	bottom:240px;
+	transition:all 0.2s ease-in-out;
 }
 
 #back-to-top:after{
@@ -387,9 +387,13 @@ article#about-container>div>h2{
 	display: block;
 	width: 30px;
 	height:3px;
-	background: #222;
+	background: #000;
 	left:-15px;
 	bottom:-22px;
+}
+
+.hideBTT{
+	right:-30px;
 }
 
 .displayBTT{
