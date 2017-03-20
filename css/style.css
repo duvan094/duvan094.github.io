@@ -217,14 +217,18 @@ div.article-container>h1,div.article-container>h4{
 div.article-container>h1{
 	color:#ff3030;
 	margin-top: 22px;
-	font-size: 22px;
+	font-size: 42px;
+	font-weight: 900;
 }
 
 
 div.article-container>h4{
 	font-weight: 300;
+	font-size:18px;
 }
 
+
+/*
 figure#profile-image{
 	background: url("../img/profile2.jpg");
 	background-position: center;
@@ -242,7 +246,7 @@ figure#profile-image{
 	-moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
 }
-
+*/
 
 .article-wrapper{
 	padding: 88px 11px;
@@ -365,9 +369,40 @@ article#about-container>div>h2{
 	transition:none;
 }
 
+#back-to-top{
+	position: fixed;
+	width: 0;
+	height: 0;
+	display: block;
+	border: solid 15px transparent;
+	border-bottom-color: #222;
+	z-index: 1000000;
+	bottom:44px;
+	right:0px;
+}
+
+#back-to-top:after{
+	position: absolute;
+	content: '';
+	display: block;
+	width: 30px;
+	height:3px;
+	background: #222;
+	left:-15px;
+	bottom:-22px;
+}
+
+.displayBTT{
+	right:44px;	
+}
+
+#back-to-top-target{
+	display: block;
+	height: 22px;
+}
 
 footer{
-	background:#000;
+	background:#222;
 	text-align:center;
 	padding:88px 0;
 }
@@ -381,7 +416,7 @@ footer>.contact-button{
 }
 
 .contact-button:hover{
-	color:#000000;
+	color:#222;
 	background: #FFF;
 	cursor:pointer;
 }

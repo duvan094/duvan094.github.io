@@ -15,6 +15,7 @@ $(document).on('scroll', function() {
 	var reached = false;
 
     if($(this).scrollTop()>=$('#nav-target').position().top){
+
         var navLinks = document.querySelectorAll("nav>ul>li>a");
 
 	    for(var i = 0; i<navLinks.length; i++){
@@ -22,7 +23,7 @@ $(document).on('scroll', function() {
 	       	navLinks[i].classList.remove("white-line");
 	       	navLinks[i].className = "black-line";
 	    }
-	     
+
     }else{
     	var navLinks = document.querySelectorAll("nav>ul>li>a");
 
@@ -31,6 +32,12 @@ $(document).on('scroll', function() {
 	       	navLinks[i].classList.remove("black-line");
 	       	navLinks[i].className = "white-line";
         }
+    }
+
+
+    if($(this).scrollTop()>=$(document).height() - $(window).innerHeight()){
+    	var backToTopButton = document.getElementById("back-to-top");
+    	backToTopButton.className = "displayBTT";
     }
 
 });
