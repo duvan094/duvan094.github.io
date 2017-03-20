@@ -1,3 +1,7 @@
+$(window).load(function(){
+	document.getElementById("top-image").style.height = window.innerHeight;
+});
+
 $(document).ready(function(){
 
 	$('a').click(function(){
