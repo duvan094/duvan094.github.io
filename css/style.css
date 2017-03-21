@@ -12,6 +12,7 @@
   color:#FFF;
 }
 
+
 h1,h2,h3,h4{
 	font-family: 'Roboto', sans-serif;
 	color:#222;
@@ -122,9 +123,9 @@ figure#top-image{
 	position: relative;
 	text-align: center;
 
-	-webkit-box-shadow: inset 0px -13px 154px 0px rgba(0,0,0,0.75);
+/*	-webkit-box-shadow: inset 0px -13px 154px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: inset 0px -13px 154px 0px rgba(0,0,0,0.75);
-	box-shadow: inset 0px -13px 154px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px -13px 154px 0px rgba(0,0,0,0.75);*/
 }
 
 figure#top-image>div#text-container{
