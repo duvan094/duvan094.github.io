@@ -14,7 +14,7 @@ $(document).on('scroll', function() {
 
 	var reached = false;
 
-    if($(this).scrollTop()>=$('#nav-target').position().top){
+    if($(this).scrollTop()>=$('#nav-target').position().top-33){
 
         var navLinks = document.querySelectorAll("nav>ul>li>a");
 

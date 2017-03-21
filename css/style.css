@@ -254,17 +254,24 @@ figure#profile-image{
 }
 
 article#about-container>div>h2{
-	margin:0;
+	margin:0 0 22px 0;
 	font-size: 28px;
 	text-align: center;
 	font-weight: 900;
 	padding-top: 22px 0;
 }
 
+#about-container>.article-wrapper>p{
+	font-size: 20px;
+	font-weight: 300;
+}
+
 #portfolio-container>.article-wrapper>h2{
 	font-size: 28px;
 	font-weight: 900;
 }
+
+
 
 .porfolio-obj-container{
 	overflow: hidden;
@@ -285,6 +292,16 @@ article#about-container>div>h2{
     -ms-transition: all 1s ease; /* IE 9 */
     -o-transition: all 1s ease; /* Opera */
     transition: all 1s ease;
+}
+
+.left-container>p>a, .right-container>p>a{
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.left-container>p, .right-container>p{
+	font-size: 16px;
 }
 
 .left-container>a:hover>img, .right-container>a:hover>img {
