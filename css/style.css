@@ -513,9 +513,16 @@ footer>.codepen:hover>.codepen-label{
 /*CSS for view more*/
 .portfolio-obj-images>img{
 	width: 100%;
+	margin-bottom: 22px;
 }
 
+.aside-content{
+	padding:0 0 66px 0;
+}
+
+
 .aside-content>h2{
+	margin-bottom: 22px;
 	font-weight: 900;
 	font-size: 28px;
 }
@@ -650,6 +657,12 @@ body>a{
 		width: 260px;
 		left:50%;
 		margin-left:230px;
+	}
+
+	.aside-content>h2{
+		margin-bottom: 11px;
+		font-weight: 900;
+		font-size: 28px;
 	}
 
 }
