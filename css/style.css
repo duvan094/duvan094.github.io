@@ -12,6 +12,11 @@
   color:#FFF;
 }
 
+.inactiveLink {
+	pointer-events: none;
+   	cursor: default;
+}
+
 
 h1,h2,h3,h4{
 	font-family: 'Roboto', sans-serif;
@@ -425,11 +430,6 @@ article#about-container>div>h2{
 	right:44px;	
 }
 
-#back-to-top-target{
-	display: block;
-	height: 22px;
-}
-
 footer{
 	background:#111;
 	text-align:center;
@@ -508,6 +508,18 @@ footer>.codepen:hover>.codepen-label{
 .github-label{
 	color:#4078c0;
 }
+
+
+/*CSS for view more*/
+.portfolio-obj-images>img{
+	width: 100%;
+}
+
+.aside-content>p>a{
+	text-decoration: none;
+	font-weight: 500;
+}
+
 
 @media(min-width: 960px){
 
@@ -592,4 +604,44 @@ footer>.codepen:hover>.codepen-label{
 	footer>.contact-logos{
 		margin:0 44px;
 	}
+
+	/*CSS for view more*/
+	.portfolio-obj-images{
+		width: 700px;
+	}
+
+	.portfolio-obj-container{
+		overflow: hidden;
+	}
+
+	.portfolio-obj-images>img{
+		padding:0 44px 44px 0;
+		box-sizing:border-box;
+		position: relative;
+		overflow: hidden;
+	}
+
+	footer{
+		z-index: 20;
+	}
+
+	aside{
+		position: absolute;
+		height: 1658px;
+		width: 970px;
+		clip: rect(0, auto, auto, 0);
+	}
+
+	aside.drive{
+		height:1350px;
+	}
+
+	aside>.aside-content{
+		position: fixed;
+		z-index: 10;
+		width: 260px;
+		left:50%;
+		margin-left:230px;
+	}
+
 }
