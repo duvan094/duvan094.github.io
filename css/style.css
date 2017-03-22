@@ -396,7 +396,7 @@ article#about-container>div>h2{
 	width: 0;
 	height: 0;
 	display: block;
-	border: solid 15px transparent;
+	border: solid 11px transparent;
 	border-bottom-color: #111;
 	z-index: 1000000;
 	bottom:340px;
@@ -419,7 +419,7 @@ article#about-container>div>h2{
 	height:3px;
 	background: #111;
 	left:-15px;
-	bottom:-22px;
+	bottom:-20px;
 }
 
 .hideBTT{
@@ -520,6 +520,9 @@ footer>.codepen:hover>.codepen-label{
 	font-weight: 500;
 }
 
+body>a{
+	display: block;
+}
 
 @media(min-width: 960px){
 
