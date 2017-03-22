@@ -515,6 +515,11 @@ footer>.codepen:hover>.codepen-label{
 	width: 100%;
 }
 
+.aside-content>h2{
+	font-weight: 900;
+	font-size: 28px;
+}
+
 .aside-content>p>a{
 	text-decoration: none;
 	font-weight: 500;
