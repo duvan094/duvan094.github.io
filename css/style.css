@@ -642,13 +642,13 @@ body>a{
 
 	aside{
 		position: absolute;
-		height: 1658px;
+		height: 1710px;
 		width: 970px;
 		clip: rect(0, auto, auto, 0);
 	}
 
 	aside.drive{
-		height:1350px;
+		height:1370px;
 	}
 
 	aside>.aside-content{
