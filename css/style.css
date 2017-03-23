@@ -651,6 +651,10 @@ body>a{
 		height:1370px;
 	}
 
+	aside.mayai{
+		height:2220px;
+	}
+
 	aside>.aside-content{
 		position: fixed;
 		z-index: 10;
