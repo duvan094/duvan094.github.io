@@ -437,7 +437,7 @@ footer{
 }
 
 footer>p{
-	padding:88px 0 22px 0;
+	padding:66px 0 22px 0;
 	line-height: 22px;
 	color:#555;
 	font-size: 12px;
@@ -639,6 +639,14 @@ body>a{
 
 	footer{
 		z-index: 20;
+	}
+
+	footer>p{
+		padding:88px 0 22px 0;
+		line-height: 22px;
+		color:#555;
+		font-size: 12px;
+		font-weight: 500;
 	}
 
 	aside{
