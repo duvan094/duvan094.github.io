@@ -285,14 +285,14 @@ div.article-container>h1,div.article-container>h4{
 }
 div.article-container>h1{
 	color:#222;
-	font-size: 42px;
+	font-size: 38px;
 	font-weight: 900;
 }
 
 
 div.article-container>h4{
 	font-weight: 300;
-	font-size:18px;
+	font-size:16px;
 	color:#e60781;
 }
 
@@ -310,6 +310,10 @@ article#about-container>div>h2{
 	padding-top: 22px 0;
 }
 
+article#about-container{
+	padding:0 11px;
+}
+
 #about-container>.article-wrapper>p{
 	font-size: 20px;
 	font-weight: 300;
@@ -321,7 +325,7 @@ article#about-container>div>h2{
 }
 
 #portfolio-container>.article-wrapper{
-	padding: 44px 11px 0 11px;
+	padding: 44px 0px 0 0px;
 }
 
 .porfolio-obj-container{
@@ -349,6 +353,10 @@ article#about-container>div>h2{
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 16px;
+}
+
+.left-container>p, .right-container>p{
+	padding:11px;
 }
 
 .left-container>p>a:active, .right-container>p>a:active{
@@ -568,7 +576,7 @@ footer>.codepen:hover>.codepen-label{
 }
 
 .aside-content{
-	padding:0 0 66px 0;
+	padding:0 11px 66px 11px;
 }
 
 
@@ -770,6 +778,10 @@ body>a{
 		padding-left: 22px;
 	}
 
+	.left-container>p, .right-container>p{
+		padding:0px;
+	}
+
 
 	.left-container>.arrow-container:after,.right-container>.arrow-container:after{
 		border:solid 20px transparent;
@@ -860,6 +872,7 @@ body>a{
 		width: 260px;
 		left:50%;
 		margin-left:230px;
+		padding:0 0 66px 0;
 	}
 
 	.aside-content>h2{
