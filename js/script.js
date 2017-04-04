@@ -1,6 +1,25 @@
 $(document).ready(function(){
 
-	$('a').click(function(){
+    $("#hamburger-button").click(function(event){
+        event.preventDefault();
+        $("#hamburger-button").toggleClass("clicked");
+
+
+        $("#hamburger-button").toggleClass("hamburger-black");
+
+
+      $("nav").toggleClass("clicked");
+    });
+
+    $("nav>ul>li>a").click(function(event){
+        $("#hamburger-button").toggleClass("clicked");
+        $("#hamburger-button").toggleClass("hamburger-black");
+        $("nav").toggleClass("clicked");
+    });
+
+
+
+	$('nav>ul>li>a, #back-to-top, #down-arrow').click(function(){
 	    $('html, body').animate({
 	           scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
         }, 500);
@@ -12,19 +31,20 @@ $(document).ready(function(){
         var navLinks = document.querySelectorAll("nav>ul>li>a");
 
         for(var i = 0; i<navLinks.length; i++){
-            navLinks[i].style.color = "#222";
             navLinks[i].classList.remove("white-line");
             navLinks[i].className = "black-line";
         }
-
+        document.getElementById("hamburger-button").classList.remove("hamburger-white");
+        document.getElementById("hamburger-button").className = "hamburger-black";
     }else{
         var navLinks = document.querySelectorAll("nav>ul>li>a");
 
         for(var i = 0; i<navLinks.length; i++){
-            navLinks[i].style.color = "#FFF";
             navLinks[i].classList.remove("black-line");
             navLinks[i].className = "white-line";
         }
+        document.getElementById("hamburger-button").classList.remove("hamburger-black");
+        document.getElementById("hamburger-button").className = "hamburger-white";
     }
 
 
@@ -41,19 +61,27 @@ $(document).on('scroll', function() {
         var navLinks = document.querySelectorAll("nav>ul>li>a");
 
 	    for(var i = 0; i<navLinks.length; i++){
-	       	navLinks[i].style.color = "#222";
 	       	navLinks[i].classList.remove("white-line");
 	       	navLinks[i].className = "black-line";
-	    }
+        }
 
+
+        document.getElementById("hamburger-button").classList.remove("hamburger-white");
+        document.getElementById("hamburger-button").className = "hamburger-black";   
+
+
+   
+        
     }else{
     	var navLinks = document.querySelectorAll("nav>ul>li>a");
 
         for(var i = 0; i<navLinks.length; i++){
-        	navLinks[i].style.color = "#FFF";
 	       	navLinks[i].classList.remove("black-line");
 	       	navLinks[i].className = "white-line";
         }
+
+        document.getElementById("hamburger-button").classList.remove("hamburger-black");
+        document.getElementById("hamburger-button").className = "hamburger-white";
     }
 
 
