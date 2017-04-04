@@ -7,8 +7,8 @@ $(document).ready(function(){
 
         $("#hamburger-button").toggleClass("hamburger-black");
 
-
-      $("nav").toggleClass("clicked");
+        window.ontouchmove  = preventDefault; // mobile
+        $("nav").toggleClass("clicked");
     });
 
     $("nav>ul>li>a").click(function(event){
@@ -50,6 +50,14 @@ $(document).ready(function(){
 
 
 });
+
+
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;  
+}
 
 
 $(document).on('scroll', function() {
