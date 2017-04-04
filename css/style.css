@@ -19,7 +19,7 @@
 
 
 h1,h2,h3,h4{
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color:#222;
 }
 
@@ -30,11 +30,13 @@ h3{
 }
 
 p,a{
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
+	font-family: 'Raleway', sans-serif;	font-size: 16px;
 	line-height: 22px;
-	font-weight: 300;
 	color:#222;
+}
+
+a{
+	font-weight: 600;
 }
 
 body{
@@ -156,9 +158,10 @@ nav>ul>li>a{
 	text-decoration: none;
 	color:#222;
 	padding:22px 22px;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 42px;
     display: block;
+    font-family: 'Montserrat', sans-serif;
  }
 
 nav>ul>li>a:active{
@@ -237,7 +240,8 @@ figure#top-image>div#text-container>h2:after{
 figure#top-image>div#text-container>h1{
 	color:#fff;
 	font-size: 72px;
-	font-weight: 700;
+	font-weight: 200;
+	font-style: italic;
 }
 
 #down-arrow{
@@ -343,9 +347,14 @@ article#about-container>div>h2{
 
 .left-container>p>a, .right-container>p>a{
 	text-decoration: none;
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 16px;
 }
+
+.left-container>p>a:active, .right-container>p>a:active{
+	color:#e60781;
+}
+
 
 .left-container>p, .right-container>p{
 	font-size: 16px;
@@ -402,7 +411,7 @@ article#about-container>div>h2{
 	padding:5px;
 	margin: 22px 0 0 0;
 	text-align: center;
-	font-weight: 500;
+	font-weight: 600;
 	position: relative;
 	transition:all 0.2s ease-in-out;
 }
@@ -523,7 +532,8 @@ footer>.codepen:hover>svg>g>path{
 
 footer>.codepen:hover>.codepen-label{
 	color:#30a9f4;
-	width: 65px;
+	width: 70px;
+	margin-left: -5px;
 }
 
 .social-media-label{
@@ -570,7 +580,7 @@ footer>.codepen:hover>.codepen-label{
 
 .aside-content>p>a{
 	text-decoration: none;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 body>a{
@@ -657,7 +667,7 @@ body>a{
 		content: '';
 		position: absolute;
 		width:0px;
-		height: 2px;
+		height: 3px;
 		background: #FFF;
 		bottom:10px;
 		left:0;
@@ -681,7 +691,7 @@ body>a{
 		content: '';
 		position: absolute;
 		width:0px;
-		height: 2px;
+		height: 3px;
 		background: #222;
 		bottom:10px;
 		left:0;
@@ -719,7 +729,7 @@ body>a{
 	article#about-container>div>h2{
 		float:left;
 		width: 25%;
-		font-size: 42px;
+		font-size: 40px;
 		box-sizing:border-box;
 		padding-right:22px;
 		text-align: right;
