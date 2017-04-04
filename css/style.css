@@ -260,7 +260,8 @@ figure#top-image>div#text-container>h1{
 
 div.article-container{
 	position: relative;
-	padding:88px 0;
+	padding:88px 0 0 0;
+	margin-bottom: 44px;
 }
 
 div.article-container>h1,div.article-container>h4{
@@ -303,7 +304,9 @@ article#about-container>div>h2{
 	font-weight: 900;
 }
 
-
+#portfolio-container>.article-wrapper{
+	padding: 44px 11px 0 11px;
+}
 
 .porfolio-obj-container{
 	overflow: hidden;
@@ -426,7 +429,7 @@ article#about-container>div>h2{
 	border: solid 11px transparent;
 	border-bottom-color: #111;
 	z-index: 10;
-	bottom:340px;
+	bottom:110px;
 	transition:right 0.2s ease-in-out;
 }
 
@@ -458,13 +461,12 @@ article#about-container>div>h2{
 }
 
 footer{
-	background:#111;
 	text-align:center;
-	padding:110px 0 0 0;
+	padding:66px 0 0 0;
 }
 
 footer>p{
-	padding:66px 0 22px 0;
+	padding:178px 0 22px 0;
 	line-height: 22px;
 	color:#555;
 	font-size: 12px;
