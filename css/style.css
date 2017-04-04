@@ -711,10 +711,16 @@ body>a{
 		background: none;
 	}
 
-	nav>ul>li>a:active{
+	nav>ul>li>a:active,.black-line:active,.white-line:active{
+		transition:none;
 		background: none;
+		color:#e60781;
 	}
 
+	nav>ul>li>a:active:after{
+		transition:none;
+		background: #e60781;
+	}
 
 
 
