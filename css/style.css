@@ -325,7 +325,7 @@ article#about-container{
 }
 
 #portfolio-container>.article-wrapper{
-	padding: 44px 0px 0 0px;
+	padding: 44px 5px 0 5px;
 }
 
 .porfolio-obj-container{
@@ -572,7 +572,7 @@ footer>.codepen:hover>.codepen-label{
 /*CSS for view more*/
 .portfolio-obj-images>img{
 	width: 100%;
-	margin-bottom: 22px;
+	margin-bottom: 5px;
 }
 
 .aside-content{
